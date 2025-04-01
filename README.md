@@ -37,5 +37,56 @@ This is a full-stack application that allows users to register, login, trade sto
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/stock-trading-platform.git
+git clone [https://github.com/your-username/stock-trading-platform.git](https://github.com/Mallikarjuna-dev/stock-trading-platform.git)
 cd stock-trading-platform
+```
+
+### 2. Set Up the Backend
+1. Navigate to the server folder:
+```
+cd server
+```
+
+2. Install backend dependencies:
+```
+npm install
+```
+
+3. Set up environment variables by creating a .env file in the root of the server folder with the following content:
+```
+DATABASE_URL=your-database-connection-url
+JWT_SECRET=your-jwt-secret
+```
+
+4. Run the backend server:
+```
+npm run server
+```
+
+### 3. Set up the Frontend
+1. Navigate to the client folder:
+```
+cd client
+```
+
+2. install dependencies
+```
+npm install
+```
+
+3. Set up environment variables by creating a .env.local file in the root of the client folder:
+```
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000
+```
+
+4. Run the frontend server:
+```
+npm run dev
+```
+
+### 4. Run the Application
+Once both the frontend and backend are running, you can access the application at:
+
+* Backend: http://localhost:5000
+
+* Frontend: http://localhost:3000 
